@@ -1,6 +1,8 @@
 function studentGradeGenerator(){
     const prompt = require('prompt-sync')() 
-    let userInput = parseInt(prompt("Please input student marks:"))
+    let userInput = parseInt(prompt("Please input student marks:")) // User Input
+
+    // Chacking grade
     if(userInput >= 0 && userInput <=100){
         if(userInput > 79){
             console.log('A')
